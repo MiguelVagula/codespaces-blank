@@ -7,7 +7,7 @@ import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
+    <ParallaxScrollView 
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
@@ -16,33 +16,32 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Bem-vindo!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">Passo 1: Tente isso</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
+          Edite <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> Para ver as mudanças. Aperte{' '}
           <ThemedText type="defaultSemiBold">
             {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
           </ThemedText>{' '}
-          to open developer tools.
+          para abrir as ferramentas de desenvolvedor.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Passo 2: Explore</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          Toque na guia Explore para saber mais sobre o que está incluído neste aplicativo inicial.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Passo 3: Começar denovo</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
+          Quando estiver pronto, inicie{' '}
+          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> para obter um novo{' '}
+          <ThemedText type="defaultSemiBold">app</ThemedText> diretorio. Isso moverá o seu atual{' '}
+          <ThemedText type="defaultSemiBold">app</ThemedText> para{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
